@@ -67,23 +67,57 @@ function App() {
 
         <div className="products-grid">
 
-          <div className="card">
-            <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop" />
-            <h3>Black Oud</h3>
-            <p>عطر شرقي فاخر بثبات قوي</p>
-          </div>
+          <div className="products-grid">
 
-          <div className="card">
-            <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop" />
-            <h3>Royal Gold</h3>
-            <p>مزيج فاخر من الزهور والعنبر</p>
-          </div>
+  <div className="card">
+    <img
+      src="https://images.unsplash.com/photo-1541643600914-78b084683601?q=80&w=800&auto=format&fit=crop"
+      alt="رجالي"
+    />
 
-          <div className="card">
-            <img src="https://images.unsplash.com/photo-1615634262417-4cb4f8c5e0f1?q=80&w=800&auto=format&fit=crop" />
-            <h3>Night Secret</h3>
-            <p>عطر رجالي جذاب وفخم</p>
-          </div>
+    <div className="card-content">
+      <h3>عطور رجالي</h3>
+      <p>أفضل العطور الرجالي الفاخرة</p>
+
+      <a href="/men" className="btn">
+        قسم الرجالي
+      </a>
+    </div>
+  </div>
+
+  <div className="card">
+    <img
+      src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?q=80&w=800&auto=format&fit=crop"
+      alt="حريمي"
+    />
+
+    <div className="card-content">
+      <h3>عطور حريمي</h3>
+      <p>عطور ساحرة جذابة وفخمة</p>
+
+      <a href="/women" className="btn">
+        قسم الحريمي
+      </a>
+    </div>
+  </div>
+
+  <div className="card">
+    <img
+      src="https://images.unsplash.com/photo-1523293182086-7651a899d37f?q=80&w=800&auto=format&fit=crop"
+      alt="يونيسكس"
+    />
+
+    <div className="card-content">
+      <h3>عطور يونيسكس</h3>
+      <p>عطور تناسب الجميع بثبات رائع</p>
+
+      <a href="/unisex" className="btn">
+        قسم اليونيسكس
+      </a>
+    </div>
+  </div>
+
+</div>
 
         </div>
 
