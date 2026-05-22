@@ -8,3 +8,64 @@
 body{
   background:#000;
 }
+.checkout-page{
+  min-height:100vh;
+  background:#000;
+  color:white;
+  padding:40px 20px;
+  direction:rtl;
+}
+
+.checkout-page h1{
+  text-align:center;
+  margin-bottom:30px;
+  color:gold;
+}
+
+.checkout-form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea{
+  padding:15px;
+  border:none;
+  border-radius:12px;
+  font-size:18px;
+}
+
+.checkout-form textarea{
+  min-height:120px;
+}
+
+.payment-methods{
+  background:#111;
+  padding:20px;
+  border-radius:12px;
+}
+
+.payment-methods h3{
+  margin-bottom:15px;
+  color:gold;
+}
+
+.payment-methods label{
+  display:block;
+  margin-bottom:10px;
+}
+
+.checkout-form button{
+  background:gold;
+  color:black;
+  border:none;
+  padding:15px;
+  border-radius:12px;
+  font-size:20px;
+  font-weight:bold;
+  cursor:pointer;
+}
