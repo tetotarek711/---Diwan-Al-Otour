@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-export default function Checkout() {
+
+
+export default function Checkout({ cart }) {
   const [governorate, setGovernorate] = useState("");
 
   const egyptGovernorates = [
@@ -37,6 +39,32 @@ export default function Checkout() {
     <div className="checkout-page">
 
       <h1>إتمام الطلب</h1>
+
+      <div className="cart-box">
+
+  <h2>المنتجات المختارة</h2>
+
+  {cart.length === 0 ? (
+    <p>السلة فارغة</p>
+  ) : (
+    
+  cart.map((item, index) => (
+
+    <div key={index} className="cart-item">
+
+      <h3>{item.name}</h3>
+
+      <p>{item.price}</p>
+
+    </div>
+
+  ))
+
+  )}
+
+
+
+</div>
 
       <form className="checkout-form">
 
@@ -88,9 +116,6 @@ export default function Checkout() {
           تأكيد الطلب
         </button>
         
-        <a href="/checkout">
-  <button>إتمام الطلب</button>
-</a>
 
       </form>
 

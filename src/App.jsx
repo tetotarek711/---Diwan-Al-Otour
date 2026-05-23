@@ -1,5 +1,13 @@
 import "./App.css";
-function App() {
+import { useState } from "react";
+
+function App({ cart, setCart }) {
+
+
+const addToCart = (product) => {
+  setCart([...cart, product]);
+};
+
   return (
     <>
       <div className="hero">
@@ -18,6 +26,9 @@ function App() {
               >
                 واتساب
               </a>
+
+              
+
             </div>
           </nav>
 
@@ -135,6 +146,10 @@ function App() {
         </p>
 
       </section>
+      <a href="/checkout" className="floating-cart">
+  🛒 {cart.length}
+</a>
+
     </>
   );
 }
